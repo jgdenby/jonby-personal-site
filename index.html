@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./_assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./_assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./_assets/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jonby</title>
@@ -22,19 +28,24 @@
             margin: 20px 0;
         }
         .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             margin-top: 20px;
+            flex-wrap: wrap;
         }
         .links a {
             text-decoration: none;
             color: #333;
-            margin: 0 10px;
             padding: 10px 15px;
             background-color: #e0e0e0;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
+            display: inline-block;
         }
         .links a:hover {
             background-color: #d0d0d0;
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -42,7 +53,7 @@
     <h1>Joseph Denby</h1>
     
     <!-- Replace with your actual photo path -->
-    <img src="./jonby_ted.jpeg" alt="Jo and Ted" class="profile-img">
+    <img src="./_assets/jonby_ted.jpeg" alt="Jo and Ted" class="profile-img">
     
     <p>
         I'm currently a Lead Data Scientist at Navy Federal Credit Union, where I lead projects using LLMs to stop money laundering and optimize internal knowledge sharing.   
@@ -50,9 +61,8 @@
     
     <div class="links">
         <a href="https://github.com/jgdenby" target="_blank">GitHub</a>
-    </div>
-    <div class="links">
         <a href="./Joseph_Denby_Resume_1.pdf" target="_blank">CV</a>
+        <a href="https://www.linkedin.com/in/joseph-denby/" target="_blank">LinkedIn</a>
     </div>
 </body>
 </html>
